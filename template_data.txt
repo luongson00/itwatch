@@ -1,0 +1,9 @@
+INSERT INTO roles(name) VALUES('ROLE_USER');
+INSERT INTO roles(name) VALUES('ROLE_CUSTOMER');
+INSERT INTO roles(name) VALUES('ROLE_ADMIN');
+
+insert into accounts(username,password,status)
+values('admin','$2a$12$7rH4DNTRewTdwsEU0xQTD.hX4zlQMCzCuBW3d37kTFdJ3vBWVrhnO',1)
+
+insert into authorities(account_id,role_id)
+values(1,3)
